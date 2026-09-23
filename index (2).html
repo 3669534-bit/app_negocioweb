@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es-SV">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Voltix SV — tienda educativa de electrónica y periféricos.">
+<title>Voltix SV | Electrónica & Periféricos</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243b;--text:#eef6ff;--muted:#9db0c6;--line:#203851;--brand:#38bdf8;--brand2:#22c55e;--danger:#fb7185;--warn:#fbbf24;--shadow:0 18px 45px #0007;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#07111f,#0a1728 55%,#07111f);color:var(--text);line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer}.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;color:#000;padding:10px}
+header{position:sticky;top:0;z-index:20;background:#07111fee;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{max-width:1250px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 18px}.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;letter-spacing:.4px}.logo svg{width:42px;height:42px}.navlinks{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}.navlinks button,.ghost{background:transparent;color:var(--text);border:1px solid transparent;padding:9px 11px;border-radius:10px}.navlinks button:hover,.ghost:hover{border-color:var(--line);background:#ffffff08}.cartBtn{background:linear-gradient(135deg,var(--brand),#6366f1);border:0;color:#03111c;padding:10px 14px;border-radius:12px;font-weight:800}
+main{max-width:1250px;margin:auto;padding:28px 18px 70px}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:stretch}.heroCard,.panel{background:linear-gradient(145deg,#10243bcc,#0b192bcc);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.heroCard{padding:38px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}.hero h1{font-size:clamp(2.1rem,5vw,4.4rem);line-height:1.02;margin:12px 0}.hero p{color:var(--muted);font-size:1.05rem;max-width:700px}.heroActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.primary{background:linear-gradient(135deg,var(--brand),#818cf8);border:0;color:#04111e;padding:12px 18px;border-radius:12px;font-weight:900}.secondary{background:#ffffff08;color:#fff;border:1px solid var(--line);padding:12px 18px;border-radius:12px}.heroVisual{padding:25px;display:grid;place-items:center;min-height:310px}.chip{padding:7px 11px;border-radius:999px;background:#38bdf81a;border:1px solid #38bdf855;color:#9fddff;display:inline-block;font-size:.8rem}.orb{width:210px;height:210px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#38bdf8 10%,#6366f1 45%,#0b1930 70%);box-shadow:0 0 70px #38bdf855;display:grid;place-items:center;animation:float 4s ease-in-out infinite}.orb span{font-size:4rem;font-weight:900;color:#07111f}@keyframes float{50%{transform:translateY(-10px) rotate(3deg)}}section{margin-top:28px}.sectionTitle{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.sectionTitle h2{margin:0;font-size:1.6rem}.muted{color:var(--muted)}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin-bottom:18px}.field,textarea{width:100%;background:#071524;color:#fff;border:1px solid var(--line);border-radius:11px;padding:11px}.field:focus,textarea:focus{outline:2px solid #38bdf866;border-color:var(--brand)}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:#0c1b2c;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}.card:hover{transform:translateY(-3px);border-color:#38bdf866}.productImg{height:180px;width:100%;object-fit:cover;background:#07111f}.cardBody{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}.card h3{margin:0}.desc{color:var(--muted);font-size:.9rem;min-height:44px}.price{font-size:1.55rem;font-weight:900}.crc{font-size:.78rem;color:var(--muted)}.stock{font-size:.8rem}.in{color:#86efac}.out{color:#fb7185}.cardActions{display:flex;gap:8px;margin-top:auto}.smallBtn{flex:1;padding:9px;border-radius:10px;border:1px solid var(--line);background:#ffffff08;color:#fff}.smallBtn.primaryBtn{background:#38bdf8;color:#03111c;border-color:#38bdf8;font-weight:800}.layout2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{padding:20px}.panel h3{margin-top:0}.tableWrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:#b9c9db}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#ffffff10;border:1px solid var(--line);font-size:.75rem}.modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:18px;z-index:50}.modal.open{display:flex}.modalBox{width:min(720px,100%);max-height:90vh;overflow:auto;background:#0b192b;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.modalHeader{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#ffffff10;color:#fff;border-radius:10px;padding:8px 12px}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formGrid .full{grid-column:1/-1}.formActions{display:flex;justify-content:flex-end;gap:8px;margin-top:15px}.cartLine{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.cartLine img{width:64px;height:64px;object-fit:cover;border-radius:10px}.qty{display:flex;align-items:center;gap:7px}.qty button{width:30px;height:30px;border:1px solid var(--line);background:#ffffff08;color:#fff;border-radius:8px}.notice{padding:12px;border-radius:12px;background:#38bdf80c;border:1px solid #38bdf833;color:#cbeeff}.danger{color:#fecaca}.empty{text-align:center;padding:35px;color:var(--muted)}.stars{color:#fbbf24;letter-spacing:2px}.adminOnly{display:none}.admin .adminOnly{display:block}.adminGrid{display:grid;grid-template-columns:1fr 1.5fr;gap:18px}.timeline{display:grid;gap:10px}.step{display:flex;gap:12px;align-items:flex-start}.dot{width:12px;height:12px;border-radius:50%;background:var(--brand);margin-top:6px;box-shadow:0 0 0 5px #38bdf81c}.faq details{border-bottom:1px solid var(--line);padding:12px 0}.toast{position:fixed;right:18px;bottom:18px;background:#10243b;border:1px solid var(--line);padding:12px 15px;border-radius:12px;box-shadow:var(--shadow);transform:translateY(140%);transition:.25s;z-index:90}.toast.show{transform:none}.footer{border-top:1px solid var(--line);padding:28px 18px;color:var(--muted);text-align:center}
+@media(max-width:950px){.products{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.toolbar{grid-template-columns:2fr 1fr 1fr}.adminGrid{grid-template-columns:1fr}}
+@media(max-width:700px){.navlinks{display:none}.products{grid-template-columns:repeat(2,1fr)}.layout2{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.formGrid{grid-template-columns:1fr}.formGrid .full{grid-column:auto}.heroCard{padding:25px}}
+@media(max-width:470px){main{padding:18px 12px 50px}.products{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.nav{padding:10px 12px}.hero h1{font-size:2.4rem}}
+
+/* Chat de ayuda — añadido sin modificar el diseño existente */
+.helpChat{position:fixed;right:20px;bottom:20px;z-index:45;font-family:inherit}
+.helpChatToggle{width:58px;height:58px;border:0;border-radius:50%;background:linear-gradient(135deg,var(--brand),#6366f1);color:#04111e;font-size:1.45rem;font-weight:900;box-shadow:0 12px 30px #0008;transition:.2s}
+.helpChatToggle:hover{transform:translateY(-2px) scale(1.03)}
+.helpChatPanel{position:absolute;right:0;bottom:70px;width:min(360px,calc(100vw - 28px));background:#0b192b;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:none}
+.helpChatPanel.open{display:flex;flex-direction:column}
+.helpChatHead{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;background:#10243b;border-bottom:1px solid var(--line)}
+.helpChatHead strong{display:block}.helpChatStatus{font-size:.72rem;color:#86efac}
+.helpChatClose{border:0;background:#ffffff10;color:#fff;border-radius:8px;padding:6px 9px}
+.helpChatMessages{height:290px;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:9px}
+.helpMsg{max-width:86%;padding:9px 11px;border-radius:12px;font-size:.88rem}
+.helpMsg.bot{align-self:flex-start;background:#10243b;color:#e8f3ff}
+.helpMsg.user{align-self:flex-end;background:#38bdf8;color:#04111e}
+.helpChatQuick{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 10px}
+.helpChatQuick button{border:1px solid var(--line);background:#ffffff08;color:#fff;border-radius:999px;padding:6px 9px;font-size:.75rem}
+.helpChatForm{display:flex;gap:7px;padding:10px;border-top:1px solid var(--line)}
+.helpChatInput{min-width:0;flex:1;background:#071524;color:#fff;border:1px solid var(--line);border-radius:10px;padding:9px}
+.helpChatSend{border:0;border-radius:10px;padding:9px 12px;background:var(--brand);color:#04111e;font-weight:800}
+@media(max-width:470px){.helpChat{right:12px;bottom:12px}.helpChatPanel{bottom:66px}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><nav class="nav" aria-label="Navegación principal">
+<a class="logo" href="#" aria-label="Voltix SV inicio">
+<svg viewBox="0 0 48 48" role="img" aria-label="Logo Voltix"><path fill="#38bdf8" d="M28 2 8 27h12l-3 19 23-28H28z"/></svg>
+<span>VOLTIX <small style="color:#38bdf8">SV</small></span></a>
+<div class="navlinks"><button data-scroll="catalogo">Catálogo</button><button data-scroll="seguimiento">Seguimiento</button><button data-scroll="soporte">Soporte</button><button id="accountBtn">Cuenta · Robert</button></div>
+<button class="cartBtn" id="cartBtn" aria-label="Abrir carrito">🛒 <span id="cartCount">0</span></button>
+</nav></header>
+
+<main id="contenido">
+<section class="hero">
+<div class="heroCard"><span class="eyebrow">Electrónica · Gaming · Oficina</span><h1>Tecnología que conecta tus ideas.</h1><p>Periféricos y aparatos electrónicos con catálogo local, inventario demostrable y una experiencia de compra pensada para El Salvador.</p><div class="heroActions"><button class="primary" data-scroll="catalogo">Explorar productos</button><button class="secondary" id="loginHero">Iniciar sesión</button></div></div>
+<div class="heroCard heroVisual"><span class="chip">VOLTIX / POWER ON</span><div class="orb"><span>V</span></div><p class="muted">Diseño moderno · Compra local · Soporte cercano</p></div>
+</section>
+
+<section id="catalogo"><div class="sectionTitle"><div><h2>Catálogo</h2><span class="muted">Precios demostrativos en USD y referencia CRC.</span></div></div>
+<div class="toolbar">
+<input class="field" id="search" placeholder="Buscar producto..." aria-label="Buscar producto">
+<select class="field" id="category"><option value="">Todas las categorías</option></select>
+<select class="field" id="priceFilter"><option value="">Cualquier precio</option><option value="0-30">Hasta $30</option><option value="30-75">$30–$75</option><option value="75-200">$75–$200</option><option value="200-99999">Más de $200</option></select>
+<select class="field" id="stockFilter"><option value="">Disponibilidad</option><option value="in">Disponible</option><option value="out">Agotado</option></select>
+</div><div id="products" class="products"></div></section>
+
+<section id="seguimiento"><div class="sectionTitle"><h2>Seguimiento y compras</h2></div><div class="layout2"><div class="panel" id="ordersPanel"></div><div class="panel"><h3>Solicitar devolución</h3><p class="muted">Selecciona una compra y explica el motivo.</p><form id="returnForm"><select id="returnOrder" class="field" required></select><br><br><textarea id="returnReason" rows="4" maxlength="500" required placeholder="Motivo de la devolución"></textarea><div class="formActions"><button class="primary" type="submit">Enviar solicitud</button></div></form></div></div></section>
+
+<section id="adminSection" class="adminOnly"><div class="sectionTitle"><div><h2>Panel administrativo</h2><span class="muted">Demostración local. No sustituye controles de servidor.</span></div></div>
+<div class="adminGrid"><div class="panel"><h3>Producto</h3><form id="productForm"><input type="hidden" id="editId"><div class="formGrid">
+<input class="field" id="pName" placeholder="Nombre" maxlength="80" required><input class="field" id="pCategory" placeholder="Categoría" maxlength="50" required>
+<input class="field" id="pPrice" type="number" min=".01" step=".01" placeholder="Precio USD" required><input class="field" id="pStock" type="number" min="0" step="1" placeholder="Stock" required>
+<input class="field full" id="pImage" type="url" placeholder="URL de imagen (https://...)" required><textarea class="full" id="pDesc" maxlength="300" rows="3" placeholder="Descripción" required></textarea>
+</div><div class="formActions"><button class="secondary" type="button" id="clearProduct">Limpiar</button><button class="primary" type="submit">Guardar producto</button></div></form></div>
+<div class="panel"><h3>Inventario</h3><div class="tableWrap"><table><thead><tr><th>Producto</th><th>Stock</th><th>USD</th><th>Acciones</th></tr></thead><tbody id="inventory"></tbody></table></div></div></div>
+<div class="panel" style="margin-top:18px"><h3>Reportes de ventas</h3><div class="tableWrap"><table><thead><tr><th>Periodo</th><th>Órdenes</th><th>Ventas USD</th><th>IVA</th></tr></thead><tbody id="reports"></tbody></table></div></div>
+</section>
+
+<section id="soporte"><div class="sectionTitle"><h2>Ayuda y asistencia</h2></div><div class="layout2"><div class="panel faq"><h3>Preguntas frecuentes</h3><details><summary>¿Cómo funcionan los precios?</summary><p class="muted">USD es la moneda principal de la demostración. El valor CRC se calcula con una tasa configurable de referencia únicamente para mostrar conversión.</p></details><details><summary>¿Cómo se actualiza el inventario?</summary><p class="muted">Al confirmar una orden, el stock se descuenta localmente y queda persistido en el navegador.</p></details><details><summary>¿Esta tienda procesa pagos reales?</summary><p class="muted">No. Es una demostración educativa: los métodos de pago simulan el proceso y no capturan datos bancarios reales.</p></details></div>
+<div class="panel"><h3>Contacto</h3><form id="contactForm"><input class="field" id="contactName" required maxlength="80" placeholder="Nombre"><br><br><input class="field" id="contactEmail" type="email" required maxlength="120" placeholder="Correo"><br><br><textarea id="contactMsg" rows="5" required maxlength="1000" placeholder="¿En qué podemos ayudarte?"></textarea><div class="formActions"><button class="primary" type="submit">Enviar mensaje</button></div></form></div></div></section>
+</main>
+<footer class="footer">© 2026 Voltix SV · Demo educativa local · Los datos permanecen en este navegador.</footer>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalBox"><div class="modalHeader"><h2 id="modalTitle">Cuenta</h2><button class="close" id="closeModal" aria-label="Cerrar">✕</button></div><div id="modalBody"></div></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- Chatbox de ayuda para clientes -->
+<div class="helpChat" aria-label="Ayuda al cliente">
+  <div id="helpChatPanel" class="helpChatPanel" role="dialog" aria-modal="false" aria-labelledby="helpChatTitle">
+    <div class="helpChatHead">
+      <div>
+        <strong id="helpChatTitle">Ayuda Voltix SV</strong>
+        <span class="helpChatStatus">● En línea · Robert</span>
+      </div>
+      <button class="helpChatClose" id="helpChatClose" aria-label="Cerrar chat">✕</button>
+    </div>
+    <div class="helpChatMessages" id="helpChatMessages" aria-live="polite">
+      <div class="helpMsg bot">Hola, soy el asistente de Voltix SV. ¿En qué puedo ayudarte?</div>
+    </div>
+    <div class="helpChatQuick" aria-label="Preguntas rápidas">
+      <button type="button" data-help="productos">Productos</button>
+      <button type="button" data-help="pedido">Mi pedido</button>
+      <button type="button" data-help="pago">Pagos</button>
+      <button type="button" data-help="devolucion">Devoluciones</button>
+    </div>
+    <form class="helpChatForm" id="helpChatForm">
+      <input class="helpChatInput" id="helpChatInput" maxlength="300" autocomplete="off"
+             placeholder="Escribe tu pregunta..." aria-label="Escribe tu pregunta" required>
+      <button class="helpChatSend" type="submit">Enviar</button>
+    </form>
+  </div>
+  <button class="helpChatToggle" id="helpChatToggle" aria-label="Abrir chat de ayuda" aria-expanded="false">💬</button>
+</div>
+
+
+<script>
+/* =========================
+   VOLTIX SV — APP LOCAL
+   Todo funciona sin backend. localStorage guarda datos JSON.
+   Importante: para producción, autenticación, pagos, facturación fiscal
+   y autorización administrativa deben ejecutarse en servidor.
+   ========================= */
+const KEY='voltix_sv_v1';
+const RATE=8.75; // referencia de conversión USD -> CRC para la demo
+const IVA=.13;
+
+const seed={
+ users:[], session:null, cart:[], orders:[], returns:[],
+ products:[
+  {id:'p1',name:'Teclado mecánico RGB',category:'Periféricos',price:49.99,stock:12,image:'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80',desc:'Switches mecánicos, retroiluminación RGB y formato compacto.',rating:4.8,reviews:23},
+  {id:'p2',name:'Mouse gaming Pro 8K',category:'Gaming',price:39.90,stock:18,image:'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=80',desc:'Sensor preciso, ocho botones y diseño ergonómico.',rating:4.7,reviews:31},
+  {id:'p3',name:'Audífonos inalámbricos',category:'Audio',price:74.50,stock:7,image:'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80',desc:'Audio envolvente, micrófono integrado y batería de larga duración.',rating:4.6,reviews:18},
+  {id:'p4',name:'Monitor 27" QHD',category:'Monitores',price:229.00,stock:4,image:'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80',desc:'Panel QHD de 27 pulgadas para trabajo y entretenimiento.',rating:4.9,reviews:14},
+  {id:'p5',name:'Webcam Full HD',category:'Accesorios',price:54.90,stock:0,image:'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=900&q=80',desc:'Video Full HD con micrófono para videollamadas.',rating:4.4,reviews:11},
+  {id:'p6',name:'SSD externo 1 TB',category:'Almacenamiento',price:89.99,stock:9,image:'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=80',desc:'Almacenamiento portátil rápido y compacto.',rating:4.8,reviews:27}
+ ]};
+let db=JSON.parse(localStorage.getItem(KEY)||'null')||seed;
+if(!db.users.some(u=>u.email==='admin@voltix.local')) db.users.push({id:'u_admin',name:'Administrador',email:'admin@voltix.local',password:'Admin1234!',role:'admin'});
+function save(){localStorage.setItem(KEY,JSON.stringify(db))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n)}
+function crc(n){return '₡'+Math.round(n*RATE).toLocaleString('es-SV')}
+function uid(p='id'){return p+Math.random().toString(36).slice(2,9)+Date.now().toString(36)}
+function current(){return db.users.find(u=>u.id===db.session)||null}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+function openModal(title,html){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=html;document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('closeModal').onclick=closeModal;
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.querySelectorAll('[data-scroll]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.scroll).scrollIntoView({behavior:'smooth'}));
+
+function renderProducts(){
+ const cats=[...new Set(db.products.map(p=>p.category))].sort(); const sel=document.getElementById('category');
+ sel.innerHTML='<option value="">Todas las categorías</option>'+cats.map(c=>`<option>${esc(c)}</option>`).join('');
+ const q=document.getElementById('search').value.toLowerCase(), cat=sel.value, pf=document.getElementById('priceFilter').value, sf=document.getElementById('stockFilter').value;
+ let ps=db.products.filter(p=>`${p.name} ${p.desc} ${p.category}`.toLowerCase().includes(q)&&(!cat||p.category===cat)&&(!sf||(sf==='in'?p.stock>0:p.stock===0)));
+ if(pf){const [a,b]=pf.split('-').map(Number);ps=ps.filter(p=>p.price>=a&&p.price<=b)}
+ document.getElementById('products').innerHTML=ps.length?ps.map(p=>`
+ <article class="card">
+  <img class="productImg" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.src='data:image/svg+xml;charset=UTF-8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="#0d1b2e"/><text x="50%" y="50%" text-anchor="middle" fill="#9db0c6" font-size="28">Imagen no disponible</text></svg>')}">
+  <div class="cardBody"><span class="badge">${esc(p.category)}</span><h3>${esc(p.name)}</h3><div class="desc">${esc(p.desc)}</div>
+  <div><span class="stars">${'★'.repeat(Math.round(p.rating||0))}${'☆'.repeat(5-Math.round(p.rating||0))}</span> <small class="muted">${Number(p.rating||0).toFixed(1)} (${p.reviews||0})</small></div>
+  <div class="price">${money(p.price)}</div><div class="crc">${crc(p.price)} · referencia CRC</div>
+  <div class="stock ${p.stock?'in':'out'}">${p.stock?'✓ '+p.stock+' disponibles':'✕ Agotado'}</div>
+  <div class="cardActions"><button class="smallBtn" onclick="review('${p.id}')">Reseñar</button><button class="smallBtn primaryBtn" ${p.stock?'':'disabled'} onclick="addCart('${p.id}')">${p.stock?'Agregar':'Agotado'}</button></div></div></article>`).join(''):'<div class="empty" style="grid-column:1/-1">No hay productos que coincidan con los filtros.</div>';
+}
+['search','category','priceFilter','stockFilter'].forEach(id=>document.getElementById(id).addEventListener('input',renderProducts));
+
+function addCart(id){const p=db.products.find(x=>x.id===id);if(!p||p.stock<1)return toast('Producto no disponible');const x=db.cart.find(x=>x.id===id);if(x){if(x.qty>=p.stock)return toast('No hay más unidades disponibles');x.qty++}else db.cart.push({id,qty:1});save();renderCart();toast('Producto agregado al carrito')}
+function cartTotal(){return db.cart.reduce((s,x)=>s+(db.products.find(p=>p.id===x.id)?.price||0)*x.qty,0)}
+function renderCart(){
+ document.getElementById('cartCount').textContent=db.cart.reduce((s,x)=>s+x.qty,0);
+}
+function cartModal(){
+ let lines=db.cart.map(x=>{const p=db.products.find(p=>p.id===x.id);return p?`<div class="cartLine"><img src="${esc(p.image)}" alt=""><div><strong>${esc(p.name)}</strong><div class="muted">${money(p.price)} · ${crc(p.price)}</div><div class="qty"><button onclick="changeQty('${p.id}',-1)">−</button><span>${x.qty}</span><button onclick="changeQty('${p.id}',1)">+</button></div></div><strong>${money(p.price*x.qty)}</strong></div>`:''}).join('');
+ if(!lines)lines='<div class="empty">Tu carrito está vacío.</div>';
+ const total=cartTotal(), discount=total>=200?total*.1:total>=100?total*.05:0;
+ openModal('Carrito',`${lines}<div style="margin-top:18px"><div class="notice">Oferta automática: ${discount?`descuento de ${money(discount)}`:'5% desde $100 · 10% desde $200'}</div><h3>Total: ${money(total-discount)} <small class="crc">(${crc(total-discount)})</small></h3><button class="primary" onclick="checkout()" ${db.cart.length?'':'disabled'}>Continuar al pago</button></div>`);
+}
+function changeQty(id,d){const x=db.cart.find(x=>x.id===id),p=db.products.find(p=>p.id===id);if(!x)return;x.qty+=d;if(x.qty<=0)db.cart=db.cart.filter(y=>y!==x);else if(x.qty>p.stock)x.qty=p.stock;save();renderCart();cartModal()}
+document.getElementById('cartBtn').onclick=cartModal;
+
+function checkout(){
+ if(!db.cart.length)return; const u=current();
+ if(!u){openLogin('Para finalizar la compra, inicia sesión.');return}
+ const total=cartTotal(),discount=total>=200?total*.1:total>=100?total*.05:0;
+ openModal('Confirmar compra',`<div class="notice">Esta demo no procesa pagos reales ni almacena datos de tarjeta.</div><br><form id="checkoutForm">
+ <label>Método de pago<select id="pay" class="field" required><option>Tarjeta de crédito (simulada)</option><option>Efectivo contra entrega</option><option>Transferencia bancaria</option></select></label><br><br>
+ <label>Dirección de entrega<input class="field" id="address" maxlength="180" required placeholder="Dirección en El Salvador"></label><div class="notice" style="margin-top:14px">Subtotal: ${money(total)} · Descuento: ${money(discount)} · IVA incluido en los precios demostrativos.</div>
+ <div class="formActions"><button type="button" class="secondary" onclick="cartModal()">Volver</button><button class="primary">Confirmar orden</button></div></form>`);
+ document.getElementById('checkoutForm').onsubmit=e=>{e.preventDefault();placeOrder(document.getElementById('pay').value,document.getElementById('address').value.trim())}
+}
+function placeOrder(pay,address){
+ const u=current();let subtotal=cartTotal(),discount=subtotal>=200?subtotal*.1:subtotal>=100?subtotal*.05:0,total=subtotal-discount;
+ const items=db.cart.map(x=>{const p=db.products.find(p=>p.id===x.id);p.stock-=x.qty;return{id:p.id,name:p.name,price:p.price,qty:x.qty}});
+ const order={id:'V'+Date.now().toString().slice(-8),userId:u.id,date:new Date().toISOString(),items,subtotal,discount,total,payment:pay,address,status:'Procesando',location:'Centro de distribución — El Salvador',timeline:[{t:new Date().toISOString(),s:'Orden recibida'}]};
+ db.orders.push(order);db.cart=[];save();renderAll();invoice(order);toast('Compra registrada correctamente')}
+function invoice(o){
+ const rows=o.items.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.qty}</td><td>${money(i.price)}</td><td>${money(i.price*i.qty)}</td></tr>`).join('');
+ const tax=(o.total*IVA/(1+IVA));const doc=`<html><head><title>Factura ${o.id}</title><style>body{font-family:Arial;padding:35px;color:#111}h1{color:#087ea4}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{padding:8px;border-bottom:1px solid #ccc;text-align:left}.big{font-size:22px;font-weight:bold}.small{color:#666}</style></head><body><h1>VOLTIX SV</h1><p>Factura demostrativa #${o.id}<br>Fecha: ${new Date(o.date).toLocaleString('es-SV')}</p><p>Cliente: ${esc(current()?.name||'Cliente')}<br>Dirección: ${esc(o.address)}</p><table><tr><th>Producto</th><th>Cant.</th><th>Precio unit.</th><th>Total</th></tr>${rows}</table><p>Subtotal: ${money(o.subtotal)}<br>Descuento: ${money(o.discount)}<br>IVA (referencial): ${money(tax)}</p><p class="big">TOTAL USD: ${money(o.total)}</p><p class="small">Referencia CRC: ${crc(o.total)} · La documentación fiscal oficial y los requisitos de facturación electrónica deben implementarse con un sistema autorizado y actualizado según normativa aplicable.</p><script>window.onload=()=>window.print()<\/script></body></html>`;
+ const w=window.open('','_blank');if(w){w.document.write(doc);w.document.close()}else toast('Permite ventanas emergentes para generar la factura')}
+function review(id){
+ const p=db.products.find(x=>x.id===id);openModal('Reseña · '+esc(p.name),`<form id="reviewForm"><label>Calificación<select id="rating" class="field" required><option value="5">★★★★★</option><option value="4">★★★★☆</option><option value="3">★★★☆☆</option><option value="2">★★☆☆☆</option><option value="1">★☆☆☆☆</option></select></label><br><br><textarea id="reviewText" maxlength="500" rows="4" required placeholder="Escribe tu experiencia"></textarea><div class="formActions"><button class="primary">Publicar</button></div></form>`);
+ document.getElementById('reviewForm').onsubmit=e=>{e.preventDefault();let r=Number(document.getElementById('rating').value);p.rating=((p.rating||0)*(p.reviews||0)+r)/((p.reviews||0)+1);p.reviews=(p.reviews||0)+1;save();closeModal();renderProducts();toast('Reseña guardada en la demo')}
+}
+
+function openLogin(note=''){
+ openModal('Iniciar sesión',`${note?`<div class="notice">${esc(note)}</div><br>`:''}<form id="loginForm"><input class="field" id="email" type="email" maxlength="120" required placeholder="Correo"><br><br><input class="field" id="password" type="password" minlength="8" required placeholder="Contraseña"><div class="formActions"><button class="secondary" type="button" onclick="openRegister()">Crear cuenta</button><button class="primary">Entrar</button></div></form>`);
+ document.getElementById('loginForm').onsubmit=e=>{e.preventDefault();const email=document.getElementById('email').value.trim().toLowerCase(),pass=document.getElementById('password').value;const u=db.users.find(x=>x.email===email&&x.password===pass);if(!u)return toast('Credenciales incorrectas');db.session=u.id;save();closeModal();renderAll();toast('Sesión iniciada')}
+}
+function openRegister(){
+ openModal('Crear cuenta',`<form id="registerForm"><input class="field" id="rName" maxlength="80" required placeholder="Nombre completo"><br><br><input class="field" id="rEmail" type="email" maxlength="120" required placeholder="Correo"><br><br><input class="field" id="rPass" type="password" minlength="8" required placeholder="Contraseña (mín. 8 caracteres)"><div class="formActions"><button class="primary">Registrarme</button></div></form>`);
+ document.getElementById('registerForm').onsubmit=e=>{e.preventDefault();const n=document.getElementById('rName').value.trim(),email=document.getElementById('rEmail').value.trim().toLowerCase(),pass=document.getElementById('rPass').value;if(pass.length<8||!n||!email)return toast('Completa los datos correctamente');if(db.users.some(u=>u.email===email))return toast('Ese correo ya está registrado');const u={id:uid('u'),name:n,email,password:pass,role:'customer'};db.users.push(u);db.session=u.id;save();closeModal();renderAll();toast('Cuenta creada')}
+}
+function account(){
+ const u=current();if(!u)return openLogin();
+ const orders=db.orders.filter(o=>o.userId===u.id);
+ openModal('Mi cuenta',`<div class="notice"><strong>${esc(u.name)}</strong><br>${esc(u.email)} · ${u.role==='admin'?'Administrador':'Cliente'}</div><h3>Historial (${orders.length})</h3>${orders.length?orders.map(o=>`<p><strong>#${o.id}</strong> · ${new Date(o.date).toLocaleDateString('es-SV')} · ${money(o.total)} · <span class="badge">${esc(o.status)}</span></p>`).join(''):'<p class="muted">Aún no tienes compras.</p>'}<div class="formActions"><button class="secondary" onclick="logout()">Cerrar sesión</button>${u.role==='admin'?'<button class="primary" onclick="closeModal();document.getElementById(\'adminSection\').scrollIntoView({behavior:\'smooth\'})">Ir a administración</button>':''}</div>`);
+}
+function logout(){db.session=null;save();closeModal();renderAll();toast('Sesión cerrada')}
+document.getElementById('accountBtn').onclick=account;document.getElementById('loginHero').onclick=()=>current()?account():openLogin();
+
+function renderOrders(){
+ const u=current(), panel=document.getElementById('ordersPanel');
+ if(!u){panel.innerHTML='<h3>Consulta tus pedidos</h3><p class="muted">Inicia sesión para ver compras, estados y ubicación.</p><button class="primary" onclick="openLogin()">Iniciar sesión</button>';document.getElementById('returnOrder').innerHTML='<option value="">Inicia sesión primero</option>';return}
+ const os=db.orders.filter(o=>o.userId===u.id);
+ panel.innerHTML='<h3>Mis pedidos</h3>'+ (os.length?os.map(o=>`<div class="panel" style="padding:13px;margin:10px 0;background:#071524"><strong>#${o.id}</strong> · ${new Date(o.date).toLocaleDateString('es-SV')}<br><span class="badge">${esc(o.status)}</span> · ${esc(o.location)}<div class="timeline" style="margin-top:10px">${o.timeline.map(x=>`<div class="step"><span class="dot"></span><div><strong>${esc(x.s)}</strong><div class="muted">${new Date(x.t).toLocaleString('es-SV')}</div></div></div>`).join('')}</div><p><button class="smallBtn" onclick="invoice(${JSON.stringify(o).replace(/</g,'\\u003c')})">Factura</button></p></div>`).join(''):'<p class="muted">No hay pedidos todavía.</p>');
+ document.getElementById('returnOrder').innerHTML=os.length?'<option value="">Seleccionar pedido</option>'+os.map(o=>`<option value="${o.id}">#${o.id} — ${money(o.total)}</option>`).join(''):'<option value="">Sin pedidos</option>';
+}
+document.getElementById('returnForm').onsubmit=e=>{e.preventDefault();const u=current();if(!u)return openLogin();const id=document.getElementById('returnOrder').value,reason=document.getElementById('returnReason').value.trim();if(!id||!reason)return toast('Completa los campos');db.returns.push({id:uid('r'),orderId:id,userId:u.id,reason,status:'Solicitada',date:new Date().toISOString()});save();e.target.reset();toast('Solicitud de devolución registrada')};
+document.getElementById('contactForm').onsubmit=e=>{e.preventDefault();e.target.reset();toast('Mensaje guardado localmente para demostración')};
+
+function renderAdmin(){
+ const u=current(), sec=document.getElementById('adminSection');if(u?.role==='admin'){document.body.classList.add('admin');sec.style.display='block'}else{document.body.classList.remove('admin');sec.style.display='none';return}
+ document.getElementById('inventory').innerHTML=db.products.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.stock}</td><td>${money(p.price)}</td><td><button class="smallBtn" onclick="editProduct('${p.id}')">Editar</button> <button class="smallBtn" onclick="deleteProduct('${p.id}')">Eliminar</button></td></tr>`).join('');
+ const periods=[['Diario',1],['Semanal',7],['Mensual',30],['Trimestral',90],['Anual',365]];
+ document.getElementById('reports').innerHTML=periods.map(([name,days])=>{const since=Date.now()-days*864e5,os=db.orders.filter(o=>new Date(o.date).getTime()>=since),sum=os.reduce((s,o)=>s+o.total,0),tax=sum*IVA/(1+IVA);return `<tr><td>${name}</td><td>${os.length}</td><td>${money(sum)}</td><td>${money(tax)}</td></tr>`}).join('');
+}
+document.getElementById('productForm').onsubmit=e=>{e.preventDefault();const id=document.getElementById('editId').value,n=document.getElementById('pName').value.trim(),cat=document.getElementById('pCategory').value.trim(),price=Number(document.getElementById('pPrice').value),stock=Number(document.getElementById('pStock').value),image=document.getElementById('pImage').value.trim(),desc=document.getElementById('pDesc').value.trim();try{new URL(image)}catch{return toast('La imagen debe ser una URL válida')}if(!n||!cat||price<=0||stock<0||!desc)return toast('Revisa los datos');if(id){const p=db.products.find(p=>p.id===id);Object.assign(p,{name:n,category:cat,price,stock,image,desc})}else db.products.push({id:uid('p'),name:n,category:cat,price,stock,image,desc,rating:0,reviews:0});save();e.target.reset();document.getElementById('editId').value='';renderAll();toast('Producto guardado')}
+function editProduct(id){const p=db.products.find(p=>p.id===id);['editId','pName','pCategory','pPrice','pStock','pImage','pDesc'].forEach((x,i)=>document.getElementById(x).value=[p.id,p.name,p.category,p.price,p.stock,p.image,p.desc][i]);document.getElementById('adminSection').scrollIntoView({behavior:'smooth'})}
+function deleteProduct(id){if(!confirm('¿Eliminar este producto?'))return;db.products=db.products.filter(p=>p.id!==id);db.cart=db.cart.filter(x=>x.id!==id);save();renderAll();toast('Producto eliminado')}
+document.getElementById('clearProduct').onclick=()=>document.getElementById('productForm').reset();
+
+function renderAll(){renderProducts();renderCart();renderOrders();renderAdmin()}
+renderAll();
+
+/* =========================
+   CHATBOX DE AYUDA — LOCAL
+   Respuestas automáticas para la demostración.
+   No envía conversaciones a servidores externos.
+   ========================= */
+const helpToggle=document.getElementById('helpChatToggle');
+const helpPanel=document.getElementById('helpChatPanel');
+const helpClose=document.getElementById('helpChatClose');
+const helpMessages=document.getElementById('helpChatMessages');
+const helpForm=document.getElementById('helpChatForm');
+const helpInput=document.getElementById('helpChatInput');
+
+function toggleHelpChat(force){
+  const open=typeof force==='boolean'?force:!helpPanel.classList.contains('open');
+  helpPanel.classList.toggle('open',open);
+  helpToggle.setAttribute('aria-expanded',String(open));
+  if(open) setTimeout(()=>helpInput.focus(),50);
+}
+function addHelpMessage(text,type='bot'){
+  const div=document.createElement('div');
+  div.className='helpMsg '+type;
+  div.textContent=text; // textContent evita interpretar HTML introducido por el cliente.
+  helpMessages.appendChild(div);
+  helpMessages.scrollTop=helpMessages.scrollHeight;
+}
+function helpAnswer(message){
+  const m=message.toLowerCase();
+  if(m.includes('producto')||m.includes('catálogo')||m.includes('catalogo'))
+    return 'Puedes consultar el catálogo, usar los filtros y agregar productos disponibles al carrito.';
+  if(m.includes('pedido')||m.includes('compra')||m.includes('rastreo')||m.includes('seguimiento'))
+    return 'En “Seguimiento y compras” puedes iniciar sesión para consultar tus pedidos, estado, ubicación y factura.';
+  if(m.includes('pago')||m.includes('tarjeta')||m.includes('transferencia')||m.includes('efectivo'))
+    return 'La demostración permite seleccionar tarjeta, efectivo o transferencia. Los pagos no son reales y no se almacenan datos bancarios.';
+  if(m.includes('devolución')||m.includes('devolucion')||m.includes('retorno'))
+    return 'En “Solicitar devolución” puedes seleccionar tu pedido y escribir la justificación para registrar la solicitud.';
+  if(m.includes('precio')||m.includes('dólar')||m.includes('dolar')||m.includes('crc')||m.includes('colón')||m.includes('colon'))
+    return 'Los precios principales se muestran en USD y debajo aparece una conversión de referencia a CRC.';
+  if(m.includes('hola')||m.includes('buenas')||m.includes('ayuda'))
+    return '¡Hola! Soy el asistente de Voltix SV. Puedo orientarte sobre productos, pedidos, pagos y devoluciones.';
+  return 'Puedo ayudarte con productos, pedidos, pagos, precios o devoluciones. También puedes usar los botones de preguntas rápidas.';
+}
+helpToggle.addEventListener('click',()=>toggleHelpChat());
+helpClose.addEventListener('click',()=>toggleHelpChat(false));
+document.querySelectorAll('[data-help]').forEach(btn=>btn.addEventListener('click',()=>{
+  const q={productos:'¿Qué productos tienen?',pedido:'¿Dónde puedo ver mi pedido?',pago:'¿Qué métodos de pago tienen?',devolucion:'¿Cómo hago una devolución?'}[btn.dataset.help];
+  addHelpMessage(q,'user');setTimeout(()=>addHelpMessage(helpAnswer(q)),250);
+}));
+helpForm.addEventListener('submit',e=>{
+  e.preventDefault();
+  const msg=helpInput.value.trim();
+  if(!msg)return;
+  addHelpMessage(msg,'user');helpInput.value='';
+  setTimeout(()=>addHelpMessage(helpAnswer(msg)),250);
+});
+
+</script>
+</body>
+</html>
